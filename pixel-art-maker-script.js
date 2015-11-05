@@ -11,7 +11,7 @@
 
  	
 
-	for(var i = 0; i<=6467; i++){
+	for(var i = 0; i<=6463; i++){
 
 		var square = document.createElement("div");
 		body.appendChild(square);
@@ -25,9 +25,14 @@
 
 		square.addEventListener("click", function(e){
 
-			 e.target.style.background = bkclr; 
-				
+			e.target.style.background = 'rgb(255,255,255)'; 
 		})
+
+		square.addEventListener("mouseenter", function(e){
+
+			e.target.style.background = bkclr; 
+		});				
+		
 	};
 
 	for(var i = 0; i <=10; i++){
@@ -72,6 +77,7 @@
 			bkclr = e.target.style.background; 
 			
 		})	
+
 	};
 
 	for(var i = 0; i <=34; i++){
@@ -92,7 +98,8 @@
 
 			bkclr = e.target.style.background; 
 			
-		})	
+		})				
+
 	};
 
 	
