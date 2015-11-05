@@ -23,14 +23,25 @@
 		square.style.margin = '.10%';
 		square.style.boxShadow = ' 0px 0px 25px #9E8F8F';
 
-		square.addEventListener("click", function(e){
+		square.addEventListener("mouseout", function(e){
+			if(!e.target.remainColored) {
 
-			e.target.style.background = 'rgb(255,255,255)'; 
-		})
+				e.target.style.background = 'rgb(255,255,255)'; 
+			}
+
+		});
+
+		square.addEventListener("click", function(e){
+			
+			e.target.style.background = bkclr; 
+			e.target.remainColored = true;
+			
+		});	
 
 		square.addEventListener("mouseenter", function(e){
 
 			e.target.style.background = bkclr; 
+			
 		});				
 		
 	};
