@@ -11,7 +11,7 @@
 
  	
 
-	for(var i = 0; i<=6463; i++){
+	for(var i = 0; i<=2210; i++){
 
 		var square = document.createElement("div");
 		body.appendChild(square);
